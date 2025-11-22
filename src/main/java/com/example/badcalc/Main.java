@@ -159,8 +159,8 @@ public class Main {
         // RAZÓN: Es una vulnerabilidad de seguridad (prompt injection) y no tiene propósito en código limpio
 
         try (Scanner sc = new Scanner(System.in)) {
-            boolean running = true; // CAMBIO: Eliminado label 'outer:' y usado booleano
-            // RAZÓN: Labels y múltiples break/continue son anti-patrón; mejor control con variables
+            boolean running = true; // Eliminado label 'outer:' y usado booleano
+            // Motivo: Labels y múltiples break/continue son anti-patrón; mejor control con variables
 
             while (running) {
                 displayMenu();
@@ -174,8 +174,8 @@ public class Main {
                 }
             }
         }
-        // CAMBIO: Eliminado el bloque que crea 'leftover.tmp' vacío
-        // RAZÓN: No tiene propósito y solo genera confusión
+        // Eliminacion del bloque que crea 'leftover.tmp' vacío
+        // Motivo: No tiene propósito y solo genera confusión
     }
 
     /**
